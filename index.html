@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Front Rowtie</title>
+    <link rel="icon" type="image/png" href="logoicon.png" />
+    <style>
+      /* Menghilangkan margin dan membuat layout memenuhi layar HP */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background-color: #ffffff;
+        overflow: hidden;
+      }
+      /* Pembungkus utama agar responsif */
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* Mengatur iframe penampil PDF agar penuh 100% layar */
+      .pdf-viewer {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 
+            PENTING: Ganti tulisan 'CONTOH-WEB-KAMU.netlify.app' di bawah ini 
+            dengan alamat link website asli yang kamu dapatkan setelah upload ke Netlify/GitHub!
+        -->
+      <iframe
+        src="https://drive.google.com/file/d/1mdiKkc8at5_AEOsDU8gBAoUxqsbm1xyE/preview"
+        class="pdf-viewer"
+      >
+      </iframe>
+    </div>
+  </body>
+</html>
